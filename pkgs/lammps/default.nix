@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
   };
 
   buildInputs = [ fftw ]
-  ++ (stdenv.lib.optionals mpiEnabled [ openmpi ]);
+  ++ (lib.optionals mpiEnabled [ openmpi ]);
 
   # Make serial version for now
   builder = builtins.toFile "builder.sh" "
