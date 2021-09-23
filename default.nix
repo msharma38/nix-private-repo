@@ -7,6 +7,7 @@ let
                                                                                    
    self = {                                                                             
       sc-file-watcher = callPackage ./pkgs/sc-file-watcher { };    
+      lammps =  callPackage ./pkgs/lammps { };
 
    };                                                                                   
 in self 
