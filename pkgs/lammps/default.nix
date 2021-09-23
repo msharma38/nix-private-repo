@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, libpng,
+{ stdenv, fetchurl, lib, libpng,
   mpiEnabled ? false,
   fftw,
   openmpi
@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
       under the terms of the GNU Public License (GPL).
       '';
     homepage = "http://lammps.sandia.gov";
-    license = stdenv.lib.licenses.gpl2;
-    platforms = stdenv.lib.platforms.linux;
+    license = lib.licenses.gpl2;
+    platforms = lib.platforms.linux;
   };
 }
