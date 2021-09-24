@@ -10,6 +10,7 @@ let
       lammps =  callPackage ./pkgs/lammps { };
       hello =  callPackage ./pkgs/hello { };
       openbrf =  callPackage ./pkgs/openbrf { };
+      calc =  callPackage ./pkgs/calc { };
 
    };                                                                                   
 in self 
