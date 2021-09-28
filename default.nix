@@ -12,6 +12,8 @@ let
       openbrf =  callPackage ./pkgs/openbrf { };
       calc =  callPackage ./pkgs/calc { };
       form = callPackage ./pkgs/form { };
+      test = callPackage ./pkgs/test { };
+      
 
    };                                                                                   
 in self 
